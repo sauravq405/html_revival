@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website with videos</title>
+</head>
+<body>
+    <!-- MP4, WebM and Ogg are the only format of videos supported -->
+    <video controls autoplay muted loop src="videos/earth_rotating.mp4" width="600"></video>
+    <br />
+    <br />
+    <video controls autoplay muted loop  width="600">
+        <source src="videos/earth_rotating.mp4">
+        <source src="videos/earth_rotating.WebM"> <!-- If our browser doesn't support MP4 file, this will act as the backup-->
+        This browser does not support HTML5 video. <!--Fallback-->
+    </video>
+</body>
+</html>
